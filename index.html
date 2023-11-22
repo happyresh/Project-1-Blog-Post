@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Frontend Developer Blog</title>
 </head>
 <body>
     <div>
         <header>
-            <nav>
+            <nav class="nav">
                 <p><span>Front-</span>End</p>
                 <ul>
                     <li>Home</li>
@@ -72,31 +73,85 @@
             
             <aside> <!-- Inside the main is a semantic element for "sidebar" -->
                 <!-- Step 5: Inside the aside section, create two divs, one for popular-posts, and one for social-side -->
-                <div> <!-- div for "popular-posts-side" -->
-                    <!-- Create a subheading:  POPULAR POSTS -->
-                    <!-- Under this subheading, create another div for "popular-posts", this will put all of the popular posts div into one div-->
-                    <!-- Inside the popular posts div, create a div for the "popular-post" -->
-                    <!-- Inside the popular post div, create a div for the "popular-post-image": images/posts/post1.jpg -->
-                    <!-- Inside the popular post div, create a div for the "popular-post-content" -->
-                    <!-- Inside the popular post content div, create an anchor tag for the "popular-post-title": Interesting HTML tags  -->
-                    <!-- Inside the popular post content div, create a paragraph for the "popular-post-desc": I am going to show you the top 9 interesting HTML... -->    
+                <div class="popular-posts-side"> <!-- div for "popular-posts-side" -->
 
+                    <h2>POPULAR POSTS</h2>
+                    <div id="popular-posts">
+                        <div class="popular-post">
+                            <div class="popular-post-image">
+                                <img src="post/post1.jpg" alt="Post 1 Image">
+                            </div>
+                            <div class="popular-post-content">
+                                <a href="#" class="popular-post-title">Interesting HTML tags</a>
+                                <p class="popular-post-desc">I am going to show you the top 9 interesting HTML...</p>
+                            </div>
+                        </div>
+                    
                     <!-- Using the instructions above, create 3 more popular posts with the details:  -->
 
                     <div> <!-- div for "popular-post" -->
+                            <div class="popular-post">
+                                <div class="popular-post-image">
+                                    <img src="post/post2.png" alt="Post 2 Image">
+                                </div>
+                                <div class="popular-post-content">
+                                    <a href="#" class="popular-post-title">Unleash the Potential of Lists</a>
+                                    <p class="popular-post-desc"> HTML lists are a powerful tool for organizing...</p>
+                                </div>
+                            </div>
                     <!-- Inside this div, include the following: images/posts/post2.png, Unleash the Potential of Lists, HTML lists are a powerful tool for organizing...  -->
                     </div>
 
                     <div> <!-- div for "popular-post"-->
+                        <div class="popular-post">
+                            <div class="popular-post-image">
+                                <img src="post/post3.webp" alt="Post 3 Image">
+                            </div>
+                            <div class="popular-post-content">
+                                <a href="#" class="popular-post-title">Master HTML in 24 Mins</a>
+                                <p class="popular-post-desc">Learn HTML & CSS right from the basics...</p>
+                            </div>
+                        </div>
                     <!-- Inside this div, include the following: images/posts/post3.webp, Master HTML in 24 Mins, Learn HTML & CSS right from the basics...  -->
                     </div>
-
                     <div> <!-- div for "popular-post" -->
+                        <div class="popular-post">
+                            <div class="popular-post-image">
+                                <img src="post/post4.png" alt="Post 4 Image">
+                            </div>
+                            <div class="popular-post-content">
+                                <a href="#" class="popular-post-title">The state of a checkbox</a>
+                                <p class="popular-post-desc">I was in the middle of creating a small web...</p>
+                            </div>
+                        </div>
                         <!-- Inside this div, include the following: images/posts/post4.png, The state of a checkbox, I was in the middle of creating a small web...  -->
                         </div>
+                    </div>
                 </div>
 
-                <div> <!-- div for "social-side" -->
+                <div> 
+                    <div id="social-side">
+                        <h2>FOLLOW ME</h2>
+                        <div id="social-media-links">
+                            <div class="social-link">
+                                <img src="social/facebook.png" alt="Facebook Icon">
+                                <a href="https://www.facebook.com/happyreshh/">Facebook</a>
+                            </div>
+                            <div class="social-link">
+                                <img src="social/twitter.png" alt="Twitter Icon">
+                                <a href="https://twitter.com/home">Twitter</a>
+                            </div>
+                            <div class="social-link">
+                                <img src="social/instagram.png" alt="Instagram Icon">
+                                <a href="https://www.instagram.com/happyresh/?theme=dark">Instagram</a>
+                            </div>
+                            <div class="social-link">
+                                <img src="social/linkedin.png" alt="LinkedIn Icon">
+                                <a href="https://www.linkedin.com/in/recio-eliniel-932521291/">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- div for "social-side" -->
                     <!-- create a subheading:  FOLLOW US -->
                     <!-- under this subheading, create another div for social media links, this will put all of the social media links into one div-->
                     <!-- Inside the social media links div, add the picture from the folder of socials and create an anchor tag for the Facebook link: https://www.facebook.com/ -->
