@@ -58,7 +58,6 @@ body {
 
 /* Step 1: Navigation Bar Styles */
 .nav {
-    
     /* display: ;
     justify-content: ;
     align-items: ;
@@ -70,7 +69,7 @@ body {
 }
 
 /* Step 2: Navigation Text Styles */
-nav p {
+.nav p {
     /* font-size: ;
     font-weight: ;
     color: ;

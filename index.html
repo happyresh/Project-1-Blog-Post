@@ -20,57 +20,52 @@
                 </ul>
             </nav>
             <section>
-                <div>
+                <div class="intro-container">
                     <h1>Front-end</h1>
                     <p>Let us now dive deep in the world of web development. This will be the first stepping stone to your future career.</p>
                 </div>
         </header>
         <main>
-            <div> <!-- Created a div to contain the "blog" -->
-                <article> <!-- Created an article element for "posts" to group the individual blog posts -->
-                    <div> <!-- Created individual divs for the  "post" -->
-                        <div> <!-- Inside each post div, create a div for the "post-image" -->
-                            <img src="image/img1.avif" alt="Unveiling the Blueprint of the Web Image"> <!-- Created an img element with the appropriate src and alt attributes for the post image -->
+            <div id="blog-container">
+                <article>
+                    <!-- Blog Post 1 -->
+                    <div class="post">
+                        <div class="post-image">
+                            <img src="image/img1.avif" alt="Unveiling the Blueprint of the Web Image">
                         </div>
-
-                        <div> <!-- Inside each post div is a "post-content" to contain the post title, info, and summary -->
-                        
-                            <a>Unveiling the Blueprint - Mastering HTML Document Structure</a> <!-- Inside the post-content div is a created anchor tag for the "post-title" -->
-                        
-                            <p>Posted on November 20, 2023 by Recio Eliniel</p> <!-- Inside the post-content div is a created paragraph for the "post-info" -->
-                        
-                            <p> <!-- Inside the post-content div is a created paragraph for the  "post-summary" --> Imagine you're about to embark on a journey to build your dream house. What's the first thing you need? A solid blueprint, right? Well, welcome to the world of web development, where your canvas is a blank web page, and your blueprint is the HTML document structure.</p>
+                        <div class="post-content">
+                            <a href="#">Unveiling the Blueprint - Mastering HTML Document Structure</a>
+                            <p>Posted on November 22, 2023 by Recio Eliniel</p>
+                            <p>Imagine you're about to embark on a journey to build your dream house. What's the first thing you need? A solid blueprint, right? Well, welcome to the world of web development, where your canvas is a blank web page, and your blueprint is the HTML document structure.</p>
                         </div>
                     </div>
-                
-                    <!-- Step 4.1: Using the instructions above, create 2 more blog post with the details:  -->
-
-                    <div> 
-                        <div>
-                            <img src="image/img2.jpeg" alt="Mastering the Art: Creating Interactive Web Experiences">
+            
+                    <!-- Blog Post 2 -->
+                    <div class="post">
+                        <div class="post-image">
+                            <img src="image/img2.jpeg" alt="Mastering the Art: Creating Interactive Web Experiences Image">
                         </div>
-                        <div>
-                            <a>Mastering the Art: Creating Interactive Web Experiences</a>
+                        <div class="post-content">
+                            <a href="#">Mastering the Art: Creating Interactive Web Experiences</a>
                             <p>Posted on November 22, 2023 by Recio Eliniel</p>
                             <p>Explore the art of creating contact forms, surveys, and more. Understand how to collect user data, validate inputs, and enhance the user experience. From simple text inputs to radio buttons and dropdown menus, we'll cover it all in this exciting journey into web forms.</p>
                         </div>
                     </div>
-
-
-                    <div > 
-                        <div>
-                            <img src="image/img3.jpeg" alt="Revolutionize Web Design: Crafting Dynamic Layouts">
+            
+                    <!-- Blog Post 3 -->
+                    <div class="post">
+                        <div class="post-image">
+                            <img src="image/img3.jpeg" alt="Revolutionize Web Design: Crafting Dynamic Layouts Image">
                         </div>
-                        <div>
-                            <a>Revolutionize Web Design: Crafting Dynamic Layouts</a>
+                        <div class="post-content">
+                            <a href="#">Revolutionize Web Design: Crafting Dynamic Layouts</a>
                             <p>Posted on November 22, 2023 by Recio Eliniel</p>
                             <p>Unlock the magic of CSS Flexbox and transform your web layout! Say goodbye to the days of complex grids and welcome the simplicity and flexibility of Flexbox. Learn how to create responsive and dynamic layouts that adapt effortlessly to different screen sizes.</p>
                         </div>
-                        </div>
+                    </div>
                 </article>
             </div>
 
-            
             <aside> <!-- Inside the main is a semantic element for "sidebar" -->
                 <!-- Step 5: Inside the aside section, create two divs, one for popular-posts, and one for social-side -->
                 <div class="popular-posts-side"> <!-- div for "popular-posts-side" -->
@@ -134,45 +129,46 @@
                         <h2>FOLLOW ME</h2>
                         <div id="social-media-links">
                             <div class="social-link">
-                                <img src="social/facebook.png" alt="Facebook Icon">
-                                <a href="https://www.facebook.com/happyreshh/">Facebook</a>
+                                <a href="https://www.facebook.com/happyreshh/" target="_blank">
+                                <img src="social/facebook.png" alt="Facebook Icon"></a>
                             </div>
                             <div class="social-link">
-                                <img src="social/twitter.png" alt="Twitter Icon">
-                                <a href="https://twitter.com/home">Twitter</a>
+                                <a href="https://twitter.com/home" target="_blank"> 
+                                <img src="social/twitter.png" alt="Twitter Icon"></a>
                             </div>
                             <div class="social-link">
-                                <img src="social/instagram.png" alt="Instagram Icon">
-                                <a href="https://www.instagram.com/happyresh/?theme=dark">Instagram</a>
+                                <a href="https://www.instagram.com/happyresh/?theme=dark" target="_blank">
+                                <img src="social/Instagram.png.webp" alt="Instagram Icon">></a>
                             </div>
                             <div class="social-link">
-                                <img src="social/linkedin.png" alt="LinkedIn Icon">
-                                <a href="https://www.linkedin.com/in/recio-eliniel-932521291/">LinkedIn</a>
+                                <a href="https://www.linkedin.com/in/recio-eliniel-932521291/" target="_blank">
+                                <img src="social/linkedin.png" alt="LinkedIn Icon">></a>
                             </div>
                         </div>
                     </div>
-                    <!-- div for "social-side" -->
-                    <!-- create a subheading:  FOLLOW US -->
-                    <!-- under this subheading, create another div for social media links, this will put all of the social media links into one div-->
-                    <!-- Inside the social media links div, add the picture from the folder of socials and create an anchor tag for the Facebook link: https://www.facebook.com/ -->
-                    <!-- Inside the social media links div, add the picture from the folder of socials and create an anchor tag for the Twitter link: https://twitter.com/ -->
-                    <!-- Inside the social media links div, add the picture from the folder of socials and create an anchor tag for the Instagram link: https://www.instagram.com/ -->
-                    <!-- Inside the social media links div, add the picture from the folder of socials and create an anchor tag for the LinkedIn link: https://www.linkedin.com/ -->
-                </div>
             </aside>
         </main>
 
         <footer>
-            <!-- Step 6: Inside the footer section, create a div for the "footerBoxes" -->
-            <!-- Inside the footerBoxes div, create a div for the "footerBox" -->
-            <!-- Inside the footerBox div, create an h3:  Privacy Policy -->
-            <!-- Add an hr for a line -->
-            <!-- Inside the footerBox div, create a paragraph:  We are committed to protecting your privacy. We will only use the information we collect about you lawfully (in accordance with the Data Protection Act 1998). Please read on if you wish to learn more about our privacy policy. --> 
-
-            <!-- Using the instructions above, create 2 more footer boxes with the details: Terms of Service - Our Service allows you to post, link, store, share, and otherwise make available certain information, text, graphics, videos, or other material. You are responsible for the Content posted on the Service.
-                Help & Support - If you have any questions or need assistance, our support team is here to help. Contact us via email or visit our help center for answers to frequently asked questions. -->
-            <hr> <!-- Add an hr for a line "splitter"-->
-            <p>2023 Blog Structure</p> <!-- Add a paragraph for the "copy-right" -->
+            <div id="footerBoxes">
+              <div class="footerBox">
+              <h3>Privacy Policy</h3>
+              <hr>
+             <p>We are committed to protecting your privacy. We will only use the information we collect about you lawfully (in accordance with the Data Protection Act 1998). Please read on if you wish to learn more about our privacy policy.</p>
+         </div>
+         <div class="footerBox">
+              <h3>Terms of Service</h3>
+              <hr>
+              <p>Our Service allows you to post, link, store, share, and otherwise make available certain information, text, graphics, videos, or other material. You are responsible for the Content posted on the Service.</p>
+         </div>
+         <div class="footerBox">
+              <h3>Help & Support</h3>
+              <hr>
+            <p>If you have any questions or need assistance, our support team is here to help. Contact us via email or visit our help center for answers to frequently asked questions.</p>
+        </div>
+           </div>
+              <hr>
+            <p>2023 Blog Structure</p><p id="copy-right">&copy; 2023 Frontend Developer Blog by Recio. All rights reserved.</p>
         </footer>
     </div>
 </body>
